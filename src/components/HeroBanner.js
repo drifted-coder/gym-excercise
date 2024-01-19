@@ -28,7 +28,7 @@ const HeroBanner = () => {
       <Typography
         fontWeight={600}
         color="#ff2625"
-        sx={{ opacity: 0.1, display: { lg: "block", xs: "none" } }}
+        sx={{ opacity: 0.1, display: { lg: "inline-block", xs: "none" } }}
         fontSize="200px"
       >
         Excercise
