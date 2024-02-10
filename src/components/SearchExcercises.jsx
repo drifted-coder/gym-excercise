@@ -10,13 +10,13 @@ const SearchExcercises = ({ setExercises, exercises, bodyPart, setBodyPart }) =>
 
   // API call to get the list of body parts
   
-  // useEffect(() => {
-  //   const fetchExerciseData = async () => {
-  //     const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
-  //     setbodyParts(['all',...bodyPartsData]);
-  //   }
-  //   fetchExerciseData();
-  // }, [])
+  useEffect(() => {
+    const fetchExerciseData = async () => {
+      const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
+      setbodyParts(['all',...bodyPartsData]);
+    }
+    fetchExerciseData();
+  }, [])
   
   const handleSearch = async() => {
     if(search){
